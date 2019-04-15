@@ -1,0 +1,54 @@
+body {
+    font-size: 100%;
+}
+.bg-primary {
+    background-color: #15411f!important;
+}
+.container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}  
+.navbar-dark {
+    color: #a72828;
+    /* color: #e1ece3!important; */
+}        
+.jumbotron{
+    background-color:rgb(87, 223, 98);
+    color: 0a410e
+} 
+.display-5 {
+    font-size: 3em;
+    color: #0a410e;
+}   
+#websiteTitle{
+    font-size: 6em;
+    vertical-align: middle;
+    font-family: 'Pacifico', cursive;
+    padding-left: 15px;
+    color: #0a410e;
+}     
+
+h1.intro {
+    color: #15411f;
+}
+
+p.fullstackcode {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #15411f;
+    color: rgb(26, 23, 23);
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0.1em 0.1em 1.1em 2.6em; /* trbl */
+    display: block;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
