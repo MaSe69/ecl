@@ -27,12 +27,10 @@ body {
   
 background {
   display: block;
-  background-color: red;
-  background:linear-gradient( var(--blue90), var(--blue40) 1in);
-  background:linear-gradient( var(--blue90), var(--blue40) 1in);
   background: red;
   background: linear-gradient(red, yellow lin);
   background: linear-gradient( var(--blue30), var(--blue80));
+  background: url(../layoutimages/frbackground.JPG);
 }
 
 
@@ -61,7 +59,7 @@ titlehome  {
     /* Box Model */
     display: block;    
     margin-top: var(--margin_l);
-    margin-top: 100px;    
+    margin-top: 80px;    
     margin-bottom: 16px;
     margin-left:var(--margin_l_neg);
     margin-right:var(--margin_l_neg);
@@ -107,3 +105,16 @@ a:active {
 }
 /* Links - End */
 
+button-text {
+  display: block;
+  margin-top: var(--margin_l);
+  margin-top: 40px;
+  padding-bottom: 200px;
+  color:var(--blue10);
+  font: 200 1.0rem "Arial";
+
+  background: black;
+  opacity: 0.5;
+
+  text-align: center;
+}
