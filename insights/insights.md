@@ -1,8 +1,8 @@
 ---
 theme: minima
 layout: layoutmase
-title: Aufgaben
-permalink: /tasks/
+title: insights
+permalink: /insights/
 ---
 
 # Aufgaben

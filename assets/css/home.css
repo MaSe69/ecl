@@ -21,17 +21,27 @@
 body {
     font-size: 100%;
 
-    background-color: var(--blue60);
-
+    /* background-color: var(--blue60); */
     line-height: 1.62em;
+  }
+  
+background {
+  display: block;
+  background-color: red;
+  background:linear-gradient( var(--blue90), var(--blue40) 1in);
+  background:linear-gradient( var(--blue90), var(--blue40) 1in);
+  background: red;
+  background: linear-gradient(red, yellow lin);
+  background: linear-gradient( var(--blue30), var(--blue80));
 }
+
 
 menu {
   display: block;
   margin-top: var(--margin_l);
   margin-top: 40px;
   color:var(--blue10);
-  font: 500 1.3rem "Arial";
+  font: 600 1.3rem "Arial";
 
   text-align: center;
 }
@@ -41,7 +51,7 @@ supertitle {
   margin-top: var(--margin_l);
   margin-top: 100px;
   color:var(--blue10);
-  font: 400 2.1rem "Arial";
+  font: 400 1.9rem "Arial";
   
   text-align: center;
   
