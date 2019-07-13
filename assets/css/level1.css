@@ -44,7 +44,7 @@ h1  {
     background:linear-gradient( var(--blue90), var(--blue40) 1in);
     
     /* Text */
-    font: 800 2.0rem "Arial";
+    font: 800 3.0rem "Arial";
     text-align: center;
 }
 
