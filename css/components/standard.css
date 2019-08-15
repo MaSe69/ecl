@@ -1,0 +1,44 @@
+:root { font: 20px/10px "Arial", sans-serif; 
+
+  --margin_xs:    8px!important;
+  --margin_s:   16px!important;
+  --margin_m:     32px!important;
+  --margin_l:     64px!important;
+  --margin_l_neg: -60px!important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 800; 
+  letter-spacing: 4px; 
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;  
+  letter-spacing: 2px; 
+  color: black;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;  
+  font-style: italic;
+}
+
+strong {
+  color: var(--blue90);
+  font-weight: 900;
+}

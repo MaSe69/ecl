@@ -1,29 +1,8 @@
-<div class="member_background">
+<div class="private_background">
   <div class="nav_col_left">
-      <nav>
-          <ul>
-            <div class="row">
-                <div class="col-md-3">
-                    <menu>
-                          <!-- <a href="http://www.waldorfschule-mannheim.de/deutsch/eltern/elmi/index.html">ELMI</a> -->
-                          <figure class="masefigure" width="400px">
-                                <img src="../elmi/assets/layoutimages/logo-eltern.png"
-                                alt="{{ include.imagePath }}"
-                                class="maseimage">
-                                <!-- <figcaption class="masefigcaption">{{ include.caption }}</figcaption> -->
-                            </figure>
-                    </menu>
-                </div>
-
-            </div>           
-          </ul>    
-      </nav>
   </div>
   <div class="nav_col_right">
       <nav>
-          <ul>
-         
-
             <form id="registration-form" method="POST" action="#">                    
                 <span class="form-group">
                     <span class="label-login">
@@ -40,11 +19,8 @@
                 <button type="submit" class="btn button-login" value="Submit Button">Submit</button>
 
             </form>              
-
-            <li><a class="nav_member" href="{{ site.baseUrl }}member/password.html">Password</a></li> 
-            <li><a class="nav_member" href="#">Register</a></li>   
-
-          </ul>    
+            <a class="nav_private" href="{{ site.baseUrl }}private/password.html">Password</a>
+            <a class="nav_private" href="#">Register</a>
       </nav>
   </div>
 </div>
