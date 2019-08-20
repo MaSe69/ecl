@@ -1,7 +1,6 @@
 @import './utils/colors.css';
 
 @import './components/header.css';
-@import './components/private.css';
 @import './components/middle_page.css';
 @import './components/footer.css';
 @import './components/final.css';

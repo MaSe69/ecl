@@ -23,7 +23,7 @@
     border-bottom: 1px solid var(--blue10);
 }
 
-.HolyGrail_private {
+.HolyGrail_login {
     position: sticky;
     flex: 0 0 10px;
     display: flex;

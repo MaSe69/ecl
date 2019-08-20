@@ -1,0 +1,4 @@
+@import './utils/colors.css';
+
+@import './components_private/holygrail_private.css';
+@import './components/standard.css'; 

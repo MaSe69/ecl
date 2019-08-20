@@ -1,64 +1,46 @@
-<div class="private_background">
-  <div class="nav_col_left">
-  </div>
-  <div class="nav_col_right">
-      <nav>
-            <form id="registration-form" method="POST" action="#">                    
-                <span class="form-group">
-                    <span class="label-login">
-                        <label for="exampleInputEmail1">Email</label>
-                    </span>
-                    <input type="email" class="form-control" id="newemail" aria-describedby="emailHelp" placeholder="Enter email">
-                </span>
-                <span class="form-group">
-                    <span class="label-login">
-                        <label for="exampleInputPassword1">Password</label>
-                    </span>
-                    <input type="password" class="form-control" id="newpassword" placeholder="Enter Password">
-                </span>
-                <button type="submit" class="btn button-login" value="Submit Button">Submit</button>
+<div class="login_container">
+    <div class="login_logo">
+        Logo
+    </div>
 
-            </form>              
-            <a class="nav_private" href="{{ site.baseUrl }}private/password.html">Password</a>
-            <a class="nav_private" href="#">Register</a>
-      </nav>
-  </div>
+    <form id="login_form">
+        <div class="login_form_container">
+            <div class="form_email">
+                <input class="loginfield" type="email" id="email" name="email" placeholder="Your Email" style="width:256px"
+                    onfocus="this.value=''">
+            </div>
+            <div class="form_password">
+                <input class="loginfield" type="password" id="password" name="password" placeholder="Password" style="width:80px"
+                    onfocus="this.value=''"  onfocus="passwordnotok.value=''">
+            </div>
+            <div class="form_email">
+                <button class="loginbutton" type="submit" value="submit">Login</button>
+            </div>
+        </div>
+    </form>
+    <div class="login_spacer"> - </div>    
+    <div class="login_register">
+        <button class="loginbutton" onclick="window.location.href='{{ site.baseUrl }}register'">Register</button>
+    </div>
 </div>
+<div class="passwordok" id="passwordok"></div>
+<div class="passwordnotok" id="passwordnotok"></div>
+
 <script>
-    bootstrapValidate('#newemail', 'max:40: Your Email must not be longer than 40 characters');
-    bootstrapValidate('#newpasswoCrd', 'max:40: Your password must not be longer than 40 characters');
-    bootstrapValidate('#newpassword', 'min:8: Your password must not be shorter than 8 characters');
-</script>
-<script>
-    var form = document.getElementById('registration-form');
-    form.onsubmit = function(e) {
+    var form = document.getElementById('login_form');
+    form.onsubmit = function (e) {
         e.preventDefault();
-        var email = form.newemail.value;
-        var password = form.newpassword.value;
-        console.log(email, password);
-        // sendData(email, password)
-        this.reset();
-        if(password == 'asdf') {
-            window.location.replace("3da541559918a808c2402bba5012f6c60b27661c/me_index.html");
+        var password = form.password.value;
+        apppassword = getAppPassword();
+        console.log(apppassword);
+        console.log(password);
+        if (password == apppassword) {
+            console.log('Thanks for loging in!');
+            document.getElementById("passwordnotok").innerHTML = "";
+            document.getElementById("passwordok").innerHTML = "Welcome! One moment, we let you in.";
+            reroute();
         } else {
-            window.location.replace("index.html");
+            document.getElementById("passwordnotok").innerHTML = "Sorry, that does not work. Please try again!";
         }
     }
-
-
-    // function sendData(email, password) {
-    //     var xmlhttp = new XMLHttpRequest();
-    //     var theUrl = "http://localhost:5000/createuser";
-    //     xmlhttp.open("POST", theUrl, true);    
-    //     xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");    
-    //     sendLoad = JSON.stringify({"email" : email, "name"  : "NickName", "password" : password});
-    //     xmlhttp.send(sendLoad);
-    // }      
 </script>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-

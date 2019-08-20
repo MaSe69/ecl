@@ -1,10 +1,10 @@
 @import './utils/colors.css';
 
 @import './components/header.css';
-@import './components/login.css';
+@import './components_private/loggedin.css';
 @import './components/middle.css';
 @import './components/footer.css';
 @import './components/final.css';
 
-@import './components/holygrail.css';
+@import './components_private/holygrail_private.css';
 @import './components/standard.css';
