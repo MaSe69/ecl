@@ -1,9 +1,8 @@
-@import './utils/colors.css';
+@import './css_common/colors.css';
+@import './css_common/holygrail.css';
+@import './css_common/common.css';
 
-@import './components/header.css';
-@import './components/middle_page.css';
-@import './components/footer.css';
-@import './components/final.css';
-
-@import './components/holygrail_page.css';
-@import './components/standard.css';
+@import './css_public/20_header.css';
+@import './css_page/50_middle_page.css';
+@import './css_public/70_footer.css';
+@import './css_public/90_final.css';

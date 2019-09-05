@@ -1,0 +1,62 @@
+
+legend {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  padding-left: 10px;
+  width: 100px;
+
+}
+
+.HolyGrail_header {
+  position: sticky;
+  flex: 0 0 10px;
+  display: flex;
+  padding: 10px 0 0 0;
+  background-color: var(--blue100);
+  background-color: var(--prussianblue);
+  border-bottom: 1px solid var(--blue10);
+}
+
+.HolyGrail_login {
+  position: sticky;
+  flex: 0 0 32px;
+  display: flex;
+  margin: 10px 0 0 0;
+}
+
+.HolyGrail_middle {
+  flex: 1;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.HolyGrail_middle_register {
+  flex: 1;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  /* background-image: url(../../images/img_layout/blueskywithclouds.jpeg); */
+  background-color: red;
+}
+
+.column_center {
+  flex: 0 0 64%;
+  order: 0;
+}
+
+.column_left {
+  flex: 0 0 18%;
+  order: -1;
+  background-color: var(--blue20);
+  opacity: 0.0;
+}
+
+.column_right {
+  flex: 0 0 18%;
+  order: 1;
+  opacity: 0.0;
+}

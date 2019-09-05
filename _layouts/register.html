@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="icon" type="image/png" href="{{ site.baseUrl }}../images/img_layout/k8sfavicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.baseUrl }}../images/img_layout/logodrmaseway.png" sizes="32x32">
     <title>Register</title>
 
     <!-- CSS - Bootstrap 4-->
@@ -20,99 +20,38 @@
     <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
 
     <!-- Java Script -->
-    <script type="text/javascript" src="{{ site.baseUrl }}../js/login.js"></script>
+    <script type="text/javascript" src="{{ site.baseUrl }}../js/register.js"></script>
+    <script type="text/javascript" src="{{ site.baseUrl }}../js/apppassword.js"></script>
 
 </head>
 
 <body class="HolyGrail_register">
 
     <div class="column_center">
-        <div class="register_container">
+        <div class="register_box">
+            <div id="credentialsChecker" class="credentialsChecker">Please, enter with your new credentials!</div>
             <form id="registration_form" class="form_input" method="POST" action="#">
-                <input class="loginfield" type="email" id="newemail" name="newemail" placeholder="Your Email"
-                    onfocus="this.value=''">
-                <input class="loginfield" type="password" id="newpassword" name="newpassword"
-                    placeholder="Your New Password" onfocus="this.value=''" onfocus="passwordnotok.value=''">
-                <input class="loginfield" type="password" id="password_repeat" name="password_repeat"
-                    placeholder="Repeat password" onfocus="this.value=''" onfocus="passwordnotok.value=''">
+                <div class="register_element">
+                    <input class="input_field" type="email" id="newemail" name="newemail" placeholder="Your Email"
+                        onfocus="this.value=''">
+                </div>
+                <div class="register_element">
+                    <input class="input_field" type="password" id="newpassword" name="newpassword"
+                        placeholder="Your New Password" onfocus="this.value=''" onfocus="passwordnotok.value=''">
+                </div>
+                <div class="register_element">
+                    <input class="input_field" type="password" id="password_repeat" name="password_repeat"
+                        placeholder="Repeat password" onfocus="this.value=''" onfocus="passwordnotok.value=''">
+                </div>
             </form>
-            <div class="passwordnotok" id="passwordnotok"></div>
-            <div class="passwordok" id="passwordok"></div>
-            <button class="loginbutton" onclick="processData()">
-                Register</button>
+
+            <div class="register_button_outside">
+                <button onclick="registerNewUser()" class="register_button_inside">Register</button>
+            </div>
         </div>
     </div>
     <div class="column_left"></div>
     <div class="column_right"></div>
-
-    <script>
-        function processData() {
-            var form = document.getElementById('registration_form');
-            var email = form.newemail.value;
-            var newpassword = form.newpassword.value;
-            var password_repeat = form.password_repeat.value;
-            console.log('Email: ', email);
-            console.log('Password: ', newpassword);
-            console.log('Password repeat: ', password_repeat);
-            var length = newpassword.length;
-            console.log('Length of password', length);
-
-            var emailok = false;
-            var passwordok = false;
-            var message = "Thank you for registering!";
-
-            // Check Email - Check, if email already exists
-            if (email.indexOf('@') <= -1) {
-                message = "Is this a valid email address?"
-            } else {
-                emailok = true;
-            }
-
-            // Check Password
-            if (length < 4) {
-                passwordok = false;
-                message = "Choose at least 4 characters for your password, please."
-            } else {
-                passwordok = true;
-            }
-
-            // Check Password Repeat
-            if (password_repeat === newpassword) {
-                passwordok = true;
-            } else {
-                passwordok = false;
-                message = "Your repeated password does not match your password."
-            }
-
-            // Backdoor
-            if (newpassword === 'yxcv') {
-                emailok = true;  
-                passwordok = true;
-            }
-
-            console.log('Passwordok: ', passwordok);
-            if (emailok === true && passwordok === true) {
-                console.log('Thanks for loging in!');
-                document.getElementById("passwordnotok").innerHTML = "";
-                document.getElementById("passwordnotok").innerHTML = message;
-                sendData();
-                toProfile();
-            } else {
-                document.getElementById("passwordnotok").innerHTML = message;
-            }
-        }
-
-        function sendData(email, password) {
-            var xmlhttp = new XMLHttpRequest();
-            // var theUrl = "http://localhost:5000/createuser";
-            var theUrl = "http://localhost:4000/createuser";
-            xmlhttp.open("POST", theUrl, true);
-            xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            sendLoad = JSON.stringify({ "email": email, "name": "NickName", "password": password });
-            xmlhttp.send(sendLoad);
-        }
-    </script>
-
     </div>
 </body>
 
