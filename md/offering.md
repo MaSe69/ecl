@@ -6,10 +6,10 @@ permalink: /offering/
 ---
 
 # Offering
-Well, let me think about it.
 
+We are working on training courses to be ready in July 2020.
 
-For further reading register and login to the [private section](/ecl/register/)  
+For registration details, please first register and login to the [private section](/ecl/register/)  
 
 
 
