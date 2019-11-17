@@ -9,4 +9,7 @@ permalink: /offering/
 Well, let me think about it.
 
 
+For further reading register and login to the [private section](/ecl/register/)  
+
+
 

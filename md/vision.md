@@ -38,4 +38,4 @@ A good narrative for envisioning
 - embeds its points into a memorable story that you also like to remember.
 
 
-For further reading login to the private section ... 
+For further reading register and login to the [private section](/ecl/register/)  

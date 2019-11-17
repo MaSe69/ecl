@@ -13,6 +13,9 @@ Through the darkness Fynn couldn't see the traces. His hands touched the soil, b
 Yesterday evening, Lisa was furious in the tribe's convention. Not enough effort is made to find the herd, she had claimed. At least as guards everybody should be prepared to follow. She and the other hunters need to sleep on this long hunt. 
 
 A cry echoed through the night. Lisa's voice. Fynn now had a direction to go to. 
+
+
+For further reading register and login to the [private section](/ecl/register/)  
 ...
 
 
