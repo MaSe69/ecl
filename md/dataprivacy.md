@@ -10,21 +10,25 @@ This website can be used without entering personal information.
 
 # What data do we collect?
 
-No personalized data, if you do not register. 
+No personalized data at all currently. Personalized registration is currently not enabled.
+
 Analytics data, see below, for optimizing this website.
 
 # How do we collect your data?
-Using Google Analytics
+
+Google Analytics is used, see below.
 
 
 # How do we store your data?
 
 No personalized data are currently stored.
 
+
 # How to contact us
 
 On our website we offer you the opportunity to contact us, either by email and/or by phone. 
 In such event, information provided by the user is stored for the purpose of facilitating communications with the user. No data is transferred to third parties. Nor is any of this information matched to any information that may be collected by other components of our website
+
 
 # Disclaimer Google Analytics
 
