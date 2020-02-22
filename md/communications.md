@@ -2,7 +2,7 @@
 theme: minima
 layout: page_public
 title: Difference
-permalink: /bodylanguage/
+permalink: /test_bodylanguage/
 ---
 
 
